@@ -16,7 +16,7 @@ jobs:
       - name: Build image
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
       - name: Log into registry
-        run: echo "${{ secrets.ACCESS_TOKEN }}" | docker login -u bugkuctf --password-stdin
+        run: echo "${{ secrets.ACCESS_TOKEN }}" | docker login -u jesenv5 --password-stdin
 
       - name: Push image
         run: |

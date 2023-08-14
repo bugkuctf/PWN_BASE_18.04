@@ -1,9 +1,6 @@
 name: Docker
 
-on:
-  push:
-    tags:
-      - v*
+on: push
 
 env:
   IMAGE_NAME: pwn18.04
